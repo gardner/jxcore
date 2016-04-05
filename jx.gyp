@@ -19,6 +19,7 @@
     'node_no_sqlite%': 'false',
     'node_shared_library%': 0,
     'node_embed_leveldown%': 0,
+    'node_embed_libsodium%': 0,
     'node_use_mdb%': 'false',
     'node_v8_options%': '',
     'library_files': [
@@ -473,6 +474,11 @@
       {
         'defines': [ 'JXCORE_EMBEDS_LEVELDOWN' ],
         'dependencies': ['deps/leveldown-mobile/leveldown_embedded.gyp:leveldown'],
+      }],
+      ['node_embed_libsodium==1',
+      {
+        'defines': [ 'JXCORE_EMBEDS_LIBSODIUM' ],
+        'dependencies': ['deps/libsodium/deps/libsodium/libsodium.gyp:libsodium'],
       }],
       ['node_shared_zlib=="false"',
       {
