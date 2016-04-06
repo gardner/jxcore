@@ -478,7 +478,7 @@
       ['node_embed_libsodium==1',
       {
         'defines': [ 'JXCORE_EMBEDS_LIBSODIUM' ],
-        'dependencies': ['deps/libsodium/deps/libsodium/libsodium.gyp:libsodium'],
+        'dependencies': ['deps/libsodium/libsodium.gyp:libsodium'],
       }],
       ['node_shared_zlib=="false"',
       {

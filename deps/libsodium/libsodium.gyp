@@ -2,9 +2,6 @@
     'targets': [
         {
             'target_name': 'libsodium',
-            'variables': {
-                'target_arch%': 'x64'
-            },
             'type': 'static_library',
             'dependencies': [],
             'defines': [
